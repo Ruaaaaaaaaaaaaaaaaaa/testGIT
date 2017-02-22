@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+   
+    >
+	
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/mycolor"
+        >
+      
+        <TextView 
+            android:id="@+id/text_tuijian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="推荐"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"/>
+        
+          <TextView 
+            android:id="@+id/text_zhibo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="直播"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:layout_toLeftOf="@id/text_tuijian"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"/>
+        
+        <TextView 
+            android:id="@+id/text_fanju"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="番剧"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:layout_toRightOf="@id/text_tuijian"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"/>
+       <View 
+           android:id="@+id/mline"
+           android:layout_width="36sp"
+           android:layout_height="2dp"
+           android:background="#ffffff"
+           android:layout_alignParentBottom="true"
+           android:layout_marginBottom="4dp"
+           android:layout_alignLeft="@id/text_zhibo"
+           android:layout_marginLeft="-3dp"/>
+        
+        
+    </RelativeLayout >
+
+	<android.support.v4.view.ViewPager
+	    android:id="@+id/mViewPager"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1"
+	    android:background="#ffffff">
+	    
+	</android.support.v4.view.ViewPager>
+</LinearLayout>
